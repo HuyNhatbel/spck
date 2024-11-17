@@ -1,0 +1,55 @@
+.container1 div{
+    background-color: grey;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 100px 200px 300px 100px;
+}
+.item1,.item2,.item3{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.item4{
+    grid-row-start: 3;
+}
+.item3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.container2 div{
+    background-color: grey;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 200px 200px 300px;
+}
+.item8{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.item9{
+    grid-row-start: 5;
+}
+.item10{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item11{
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.item13{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item14{
+    grid-row-start: ;
+}

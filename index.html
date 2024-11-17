@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form Sign Up</h1>
+    <div id="form">
+        <input type="text" id="fullname" placeholder="Fullname">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <div>
+            <input type="radio" name="gender" id="isMale">
+            <label for="isMale">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="isFemale">
+            <label for="isFemale">Female</label>
+        </div>
+        <button id="btnSignUp">Sign Up</button>
+    </div>
+</body>
+<script>
+    const btnSignUp = document.getElementById('btnSignUp'); 
+    const fullname = document.getElementById('fullname');
+    const email = document.getElementById('email');
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+    const isMale = document.getElementById('isMale');
+    const isFemale = document.getElementById('isFemale');
+    btnSignUp.addEventListener('click', handleSignUp);
+
+    function handleSignUp() {
+        console.log(`Fullname: ${fullname.value}`);
+        console.log(`Email: ${email.value}`);
+        console.log(`Username: ${username.value}`);
+        console.log(`Password: ${password.value}`);
+        console.log(`Gender: ${isMale.checked ? 'Male' : 'Female'}`);
+        alert("Đăng nhập thành công!");
+    }
+</script>
+</html>
